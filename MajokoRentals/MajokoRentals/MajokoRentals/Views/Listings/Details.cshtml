@@ -1,0 +1,290 @@
+﻿@model MajokoRentals.Models.ListingModel
+@using System.Text.Json
+
+@{
+    ViewData["Title"] = "Listing Details";
+
+    // Deserialize image URLs from the JSON stored in ImageUrls
+    var images = new List<string>();
+    if (!string.IsNullOrEmpty(Model.ImageUrls))
+    {
+        try
+        {
+            images = JsonSerializer.Deserialize<List<string>>(Model.ImageUrls);
+        }
+        catch
+        {
+            images.Add("uploads/default.jpg");
+        }
+    }
+
+    if (!images.Any())
+    {
+        images.Add("uploads/default.jpg");
+    }
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<div class="property-details">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            @foreach (var img in images)
+            {
+                <div class="swiper-slide">
+                    <img src="~/@img" alt="@Model.Title" onerror="this.src='/uploads/default.jpg';" />
+                </div>
+            }
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="details-content">
+        <h1 class="property-title">@Model.Title</h1>
+        <p class="property-price">R @Model.Price.ToString("N2")</p>
+        <p class="property-location"><i class="fa-solid fa-location-dot"></i> @Model.Location</p>
+
+        <div class="property-info">
+            <div>
+                <h4>Type</h4>
+                <p>@Model.PropertyType</p>
+            </div>
+            <div>
+                <h4>Bedrooms</h4>
+                <p>@Model.Bedrooms</p>
+            </div>
+            <div>
+                <h4>Bathrooms</h4>
+                <p>@Model.Bathrooms</p>
+            </div>
+            <div>
+                <h4>Status</h4>
+                <p>@Model.Status</p>
+            </div>
+        </div>
+
+        <p class="property-description">@Model.Description</p>
+
+        <a class="back-button" asp-controller="Listings" asp-action="Listings">⬅ Back to Listings</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    });
+</script>
+
+<style>
+    :root {
+        --bg-1: #0E1327;
+        --bg-2: #151A2C;
+        --brand: #BAAA49;
+        --brand-2: #e4d46d;
+        --text: #FFFFFF;
+        --text-dim: #D7D9E1;
+        --border: #ffffff22;
+        --shadow: 0 18px 40px rgba(0,0,0,.45);
+        --panel: #ffffff22;
+        --panel-2: #ffffff10;
+        --radius: 18px;
+        --ring: 0 0 0 3px rgba(186,170,73,.35);
+    }
+
+    /* Page base (kept, but refined) */
+    body {
+        background: radial-gradient(1200px 600px at 10% -10%, #20306655 0%, transparent 60%), radial-gradient(900px 500px at 110% 10%, #3a2f0b33 0%, transparent 55%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
+        color: var(--text);
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin: 0;
+    }
+
+    /* Shell card */
+    .property-details {
+        max-width: 1100px;
+        margin: 64px auto;
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        -webkit-backdrop-filter: blur(14px) saturate(140%);
+        backdrop-filter: blur(14px) saturate(140%);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+    }
+
+    /* Swiper area */
+    .swiper {
+        width: 100%;
+        height: clamp(340px, 48vh, 520px);
+        background: #0f1328;
+        position: relative;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        filter: saturate(1.05) contrast(1.02);
+    }
+    /* pagination + arrows brand style */
+    .swiper-pagination-bullet {
+        background: #ffffff88;
+        opacity: .6;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: var(--brand);
+        opacity: 1;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        color: var(--brand);
+        text-shadow: 0 2px 10px rgba(0,0,0,.5);
+        width: 46px;
+        height: 46px;
+    }
+
+        .swiper-button-prev::after, .swiper-button-next::after {
+            font-size: 20px;
+            background: linear-gradient(180deg, #ffffff22, #ffffff10);
+            -webkit-backdrop-filter: blur(8px) saturate(140%);
+            backdrop-filter: blur(8px) saturate(140%);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 10px 12px;
+            box-shadow: 0 10px 26px rgba(0,0,0,.35);
+        }
+
+    /* Content area */
+    .details-content {
+        padding: clamp(20px, 4vw, 34px) clamp(18px, 4vw, 40px);
+    }
+
+    .property-title {
+        font-size: clamp(24px, 3.6vw, 34px);
+        color: var(--brand);
+        margin: 0 0 8px;
+        letter-spacing: .3px;
+        text-shadow: 0 1px 0 rgba(0,0,0,.25);
+    }
+
+    /* Price chip */
+    .property-price {
+        display: inline-block;
+        margin: 0 0 12px;
+        font-weight: 900;
+        letter-spacing: .2px;
+        color: #121629;
+        background: linear-gradient(180deg, var(--brand-2), var(--brand));
+        padding: 8px 14px;
+        border-radius: 999px;
+        box-shadow: 0 10px 26px rgba(186,170,73,.35);
+        font-size: clamp(18px, 2.2vw, 22px);
+    }
+
+    .property-location {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--text-dim);
+        margin: 0 0 22px;
+        font-size: 1.05rem;
+    }
+
+        .property-location i {
+            color: var(--brand);
+        }
+
+    .property-description {
+        line-height: 1.75;
+        color: #e7e8f2;
+        font-size: 1.05rem;
+        margin: 10px 0 28px;
+    }
+
+    /* Info grid tiles (Type / Beds / Baths / Status) */
+    .property-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 16px;
+        margin: 0 0 24px;
+    }
+
+        .property-info div {
+            text-align: center;
+            background: linear-gradient(180deg, #ffffff22, #ffffff10);
+            -webkit-backdrop-filter: blur(10px) saturate(135%);
+            backdrop-filter: blur(10px) saturate(135%);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 16px 14px;
+            box-shadow: 0 10px 24px rgba(0,0,0,.28);
+            transition: transform .15s ease, box-shadow .2s ease;
+        }
+
+            .property-info div:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 18px 36px rgba(0,0,0,.38);
+            }
+
+        .property-info h4 {
+            color: var(--brand);
+            margin: 0 0 6px;
+            font-size: .95rem;
+            letter-spacing: .2px;
+        }
+
+        .property-info p {
+            margin: 0;
+            font-weight: 800;
+            font-size: 1.05rem;
+            color: #fff;
+        }
+
+    /* Back button */
+    .back-button {
+        display: inline-block;
+        background: linear-gradient(180deg, #ffffff22, #ffffff10);
+        -webkit-backdrop-filter: blur(10px) saturate(135%);
+        backdrop-filter: blur(10px) saturate(135%);
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 14px;
+        font-weight: 800;
+        text-decoration: none;
+        border: 1px solid var(--border);
+        box-shadow: 0 10px 24px rgba(0,0,0,.28);
+        transition: transform .12s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+    }
+
+        .back-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 18px 36px rgba(186,170,73,.35);
+            background: linear-gradient(180deg, var(--brand-2), var(--brand));
+            color: #121629;
+        }
+
+    /* Responsive tweaks */
+    @@media (max-width: 640px) {
+        .swiper
+
+    {
+        height: 340px;
+    }
+
+    .details-content {
+        padding: 18px;
+    }
+
+    }
+</style>

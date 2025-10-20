@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "_Layout";
+}
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        background-color: #151A2C;
+        color: #FFFFFF;
+        font-family: Arial, sans-serif;
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 120px;
+        height: auto;
+    }
+
+    .dashboard-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        min-height: calc(100vh - 60px);
+        padding: 20px;
+    }
+
+    h1 {
+        color: #BAAA49;
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    /* KPI Cards */
+    .kpi-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+        width: 100%;
+        max-width: 900px;
+        margin-bottom: 60px;
+    }
+
+    .card.kpi {
+        background: linear-gradient(135deg, #1E2445, #151A2C);
+        border: 2px solid #BAAA49;
+        border-radius: 16px;
+        padding: 30px 20px;
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+    }
+
+        .card.kpi:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(186, 170, 73, 0.5);
+        }
+
+        .card.kpi .value {
+            font-size: 36px;
+            color: #BAAA49;
+            margin-bottom: 8px;
+        }
+
+    /* Tile Buttons */
+    .tile-grid {
+        display: grid;
+        gap: 30px;
+        width: 100%;
+        max-width: 900px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin-top: 40px;
+    }
+
+    .tile {
+        background: linear-gradient(135deg, #1E2445, #151A2C);
+        border: 2px solid #BAAA49;
+        border-radius: 16px;
+        padding: 30px 20px;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+    }
+
+        .tile:hover {
+            background-color: #BAAA49;
+            color: #151A2C;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(186, 170, 73, 0.5);
+        }
+
+    footer {
+        width: 100%;
+        padding: 20px;
+        background-color: #111732;
+        color: #BAAA49;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+    }
+</style>
+
+<div class="dashboard-container">
+    <h1>Admin Dashboard</h1>
+
+    <!-- KPI Section -->
+    <div class="kpi-grid">
+        <div class="card kpi">
+            <div class="value">@ViewBag.ActiveListings</div>
+            <div>Active Listings</div>
+        </div>
+        <div class="card kpi">
+            <div class="value">@ViewBag.TotalApplications</div>
+            <div>Applications</div>
+        </div>
+    </div>
+
+    <!-- Tiles -->
+    <div class="tile-grid">
+        <a href="/Listings/AddListing" class="tile">➕ Add New Listing</a>
+        <a href="/Listings/ManageListing" class="tile">🧾 Manage Listings</a>
+        <a href="/Application/ReviewApplication" class="tile">📋 Review Applications</a>
+        <a href="/User/ManageUsers" class="tile">👥 Manage Users</a>
+        <a href="/Maintenance/AdminMaintenance" class="tile">👥 Maintenance Requests</a>
+    </div>
+</div>
+

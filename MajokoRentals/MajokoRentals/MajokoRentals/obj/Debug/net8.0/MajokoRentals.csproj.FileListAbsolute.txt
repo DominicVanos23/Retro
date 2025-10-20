@@ -1,0 +1,272 @@
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.AssemblyInfoInputs.cache
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.AssemblyInfo.cs
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.csproj.CoreCompileInputs.cache
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.RazorAssemblyInfo.cache
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.RazorAssemblyInfo.cs
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\appsettings.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.staticwebassets.runtime.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.staticwebassets.endpoints.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.exe
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.deps.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.runtimeconfig.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.pdb
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\scopedcss\bundle\MajokoRentals.styles.css
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\scopedcss\projectbundle\MajokoRentals.bundle.scp.css
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\refint\MajokoRentals.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.pdb
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.genruntimeconfig.cache
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\ref\MajokoRentals.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.csproj.AssemblyReference.cache
+C:\Users\mazha\source\repos\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRe.55BE93C7.Up2Date
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\appsettings.Development.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\appsettings.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.staticwebassets.runtime.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.staticwebassets.endpoints.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.exe
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.deps.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.runtimeconfig.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.pdb
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Azure.Core.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Azure.Identity.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.ClientModel.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Memory.Data.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.csproj.AssemblyReference.cache
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.GeneratedMSBuildEditorConfig.editorconfig
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.AssemblyInfoInputs.cache
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.AssemblyInfo.cs
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.csproj.CoreCompileInputs.cache
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.MvcApplicationPartsAssemblyInfo.cache
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.RazorAssemblyInfo.cache
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.RazorAssemblyInfo.cs
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\scopedcss\bundle\MajokoRentals.styles.css
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\scopedcss\projectbundle\MajokoRentals.bundle.scp.css
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.build.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.development.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRe.55BE93C7.Up2Date
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\refint\MajokoRentals.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.pdb
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.genruntimeconfig.cache
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\ref\MajokoRentals.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\iTextSharp.LGPLv2.Core.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\SkiaSharp.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+D:\BCAD1_2023\Year 3\Semester 2\INSY7315\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\appsettings.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.staticwebassets.runtime.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.staticwebassets.endpoints.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.exe
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.deps.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.runtimeconfig.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\MajokoRentals.pdb
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\iTextSharp.LGPLv2.Core.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\SkiaSharp.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.csproj.AssemblyReference.cache
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.AssemblyInfoInputs.cache
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.AssemblyInfo.cs
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.csproj.CoreCompileInputs.cache
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.RazorAssemblyInfo.cache
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.RazorAssemblyInfo.cs
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\scopedcss\bundle\MajokoRentals.styles.css
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\scopedcss\projectbundle\MajokoRentals.bundle.scp.css
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRe.55BE93C7.Up2Date
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\refint\MajokoRentals.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.pdb
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\MajokoRentals.genruntimeconfig.cache
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\ref\MajokoRentals.dll
+C:\Users\stret.DOMVIVOBOOK\Downloads\MajokoRentals\MajokoRentals\MajokoRentals\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

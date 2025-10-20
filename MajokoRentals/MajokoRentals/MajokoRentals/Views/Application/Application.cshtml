@@ -1,0 +1,448 @@
+﻿@model MajokoRentals.Models.ApplicationModel
+@{
+    ViewData["Title"] = "Application";
+}
+
+<style>
+    :root {
+        --bg-1: #0E1327;
+        --bg-2: #151A2C;
+        --panel: #ffffff1f;
+        --panel-2: #ffffff12;
+        --navy: #101426;
+        --brand: #BAAA49;
+        --text: #FFFFFF;
+        --text-dim: #D7D9E1;
+        --border: #ffffff2a;
+        --shadow: 0 18px 40px rgba(0,0,0,.45);
+        --radius: 18px;
+        --ring: 0 0 0 3px rgba(186,170,73,.35);
+    }
+
+    html, body {
+        margin: 0;
+        min-height: 100%;
+        background: radial-gradient(1200px 600px at 10% -10%, #20306655 0%, transparent 60%), radial-gradient(900px 500px at 110% 10%, #3a2f0b33 0%, transparent 55%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+        /* subtle grid */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image: linear-gradient(to right, #ffffff08 1px, transparent 1px), linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: radial-gradient(circle at 50% 30%, black 30%, transparent 70%);
+        }
+
+    .application-shell {
+        max-width: 980px;
+        margin: 64px auto;
+        padding: 0 16px 40px;
+    }
+
+    .app-card {
+        border-radius: var(--radius);
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        -webkit-backdrop-filter: blur(16px) saturate(140%);
+        backdrop-filter: blur(16px) saturate(140%);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+    }
+
+    .app-header {
+        padding: 26px 26px 16px;
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(180deg, #0b102255, transparent);
+        text-align: center;
+    }
+
+    .title {
+        margin: 0;
+        font-size: clamp(26px, 3.2vw, 36px);
+        color: var(--brand);
+        letter-spacing: .4px;
+        text-shadow: 0 1px 0 rgba(0,0,0,.25);
+    }
+
+    .subtitle {
+        margin: 8px 0 0;
+        color: var(--text-dim);
+        font-size: 14px;
+    }
+
+    .app-body {
+        padding: 22px;
+    }
+
+    /* Section */
+    .section {
+        margin-top: 16px;
+        padding: 18px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: linear-gradient(180deg, #ffffff18, #ffffff0c);
+    }
+
+    .section-title {
+        color: var(--brand);
+        font-size: 13px;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+        margin: 0 0 12px;
+        opacity: .95;
+    }
+
+    /* Grid */
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .grid-1 {
+        display: grid;
+        gap: 14px;
+    }
+    @@media (max-width: 720px) {
+        .grid-2
+
+    {
+        grid-template-columns: 1fr;
+    }
+
+    }
+
+    /* Fields */
+    .form-group {
+        display: grid;
+        gap: 6px;
+    }
+
+    .label {
+        font-size: 13px;
+        color: #e6e8f2cc;
+        margin-left: 4px;
+    }
+
+    .input, .textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: linear-gradient(180deg, #0b0f2233, #0b0f221a);
+        color: var(--text);
+        font-size: 15px;
+        outline: none;
+        transition: box-shadow .2s ease, border-color .2s ease, background .2s ease;
+    }
+
+        .input::placeholder, .textarea::placeholder {
+            color: #cfd3e6cc;
+        }
+
+        .input:focus, .textarea:focus {
+            border-color: var(--brand);
+            box-shadow: var(--ring);
+            background: linear-gradient(180deg, #0b0f224d, #0b0f2226);
+        }
+
+    .textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    /* File upload (drag & drop) */
+    .file-card {
+        position: relative;
+        border: 1px dashed var(--border);
+        border-radius: 14px;
+        background: linear-gradient(180deg, #ffffff14, #ffffff0a);
+        padding: 14px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+
+        .file-card.drag {
+            border-color: var(--brand);
+            box-shadow: var(--ring);
+            background: linear-gradient(180deg, #ffffff2a, #ffffff14);
+        }
+
+    .file-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--text-dim);
+        font-size: 14px;
+    }
+
+        .file-info b {
+            color: #fff;
+        }
+
+    .file-actions {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn-file {
+        border: none;
+        border-radius: 12px;
+        padding: 10px 12px;
+        cursor: pointer;
+        background: linear-gradient(180deg, #e4d46d, #BAAA49);
+        color: #121629;
+        font-weight: 800;
+        letter-spacing: .2px;
+        box-shadow: 0 8px 20px rgba(186,170,73,.35);
+        transition: transform .15s ease, box-shadow .2s ease;
+    }
+
+        .btn-file:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(186,170,73,.45);
+        }
+
+    .hidden-input {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    /* Submit */
+    .actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .btn-submit {
+        border: none;
+        border-radius: 14px;
+        padding: 13px 26px;
+        cursor: pointer;
+        background: linear-gradient(180deg, #e4d46d, #BAAA49);
+        color: #121629;
+        font-weight: 900;
+        letter-spacing: .2px;
+        font-size: 16px;
+        box-shadow: 0 10px 24px rgba(186,170,73,.35);
+        transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+    }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 36px rgba(186,170,73,.45);
+            filter: brightness(1.02);
+        }
+
+    /* Validation / status */
+    .validation-summary {
+        background: #7b1e1e30;
+        border: 1px solid #ff8a8a55;
+        color: #ffcccc;
+        padding: 10px 12px;
+        border-radius: 12px;
+        font-size: 14px;
+        margin: 10px 0 0;
+    }
+
+    .status {
+        text-align: center;
+        margin-top: 16px;
+        font-weight: 600;
+    }
+
+        .status.success {
+            color: #8ff0a4;
+        }
+
+        .status.error {
+            color: #ffaaaa;
+        }
+
+    @@media (prefers-reduced-motion: reduce) {
+        *
+
+    {
+        transition: none !important;
+    }
+
+    }
+</style>
+
+<div class="application-shell">
+    <div class="app-card">
+        <div class="app-header">
+            <h1 class="title">Applications</h1>
+            <p class="subtitle">Interested in a property? Submit your application and required documents securely.</p>
+        </div>
+
+        <div class="app-body">
+            @* Optional server-side validation summary *@
+            @* <div asp-validation-summary="All" class="validation-summary"></div> *@
+
+            <form asp-action="Application" method="post" enctype="multipart/form-data" novalidate>
+                @Html.AntiForgeryToken()
+
+                <!-- Applicant Details -->
+                <section class="section">
+                    <h3 class="section-title">Applicant Details</h3>
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label class="label" for="FullName">Full Name</label>
+                            <input asp-for="FullName" class="input" placeholder="Your full name" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="label" for="Email">Email</label>
+                            <input asp-for="Email" class="input" placeholder="you@example.com" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label class="label" for="CellNumber">Cell Number</label>
+                            <input asp-for="CellNumber" class="input" placeholder="+27 82 555 1234" />
+                            <span asp-validation-for="CellNumber" class="text-danger"></span>
+                        </div>
+                        <div></div>
+                    </div>
+                </section>
+
+                <!-- Background -->
+                <section class="section">
+                    <h3 class="section-title">Background</h3>
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label class="label" for="EmploymentDetails">Employment Details</label>
+                            <textarea asp-for="EmploymentDetails" class="textarea" placeholder="Employer, position, income..."></textarea>
+                            <span asp-validation-for="EmploymentDetails" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="label" for="RentalHistory">Rental History</label>
+                            <textarea asp-for="RentalHistory" class="textarea" placeholder="Previous landlord, address, duration..."></textarea>
+                            <span asp-validation-for="RentalHistory" class="text-danger"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Documents -->
+                <section class="section">
+                    <h3 class="section-title">Documents</h3>
+
+                    <!-- Certified ID -->
+                    <div class="form-group">
+                        <label class="label">Certified Copy of ID</label>
+                        <div class="file-card" data-filebox="CertifiedID">
+                            <div class="file-info">
+                                <span>📄</span>
+                                <span>Drag & drop file here or <b>browse</b></span>
+                            </div>
+                            <div class="file-actions">
+                                <button type="button" class="btn-file" data-trigger>Browse</button>
+                            </div>
+                            <input asp-for="CertifiedID" type="file" class="hidden-input" />
+                        </div>
+                        <span asp-validation-for="CertifiedID" class="text-danger"></span>
+                    </div>
+
+                    <!-- Proof of Income -->
+                    <div class="form-group">
+                        <label class="label">Proof of Income</label>
+                        <div class="file-card" data-filebox="ProofOfIncome">
+                            <div class="file-info">
+                                <span>📄</span>
+                                <span>Drag & drop file here or <b>browse</b></span>
+                            </div>
+                            <div class="file-actions">
+                                <button type="button" class="btn-file" data-trigger>Browse</button>
+                            </div>
+                            <input asp-for="ProofOfIncome" type="file" class="hidden-input" />
+                        </div>
+                        <span asp-validation-for="ProofOfIncome" class="text-danger"></span>
+                    </div>
+
+                    <!-- References -->
+                    <div class="form-group">
+                        <label class="label">References</label>
+                        <div class="file-card" data-filebox="ReferencesDoc">
+                            <div class="file-info">
+                                <span>📄</span>
+                                <span>Drag & drop file here or <b>browse</b></span>
+                            </div>
+                            <div class="file-actions">
+                                <button type="button" class="btn-file" data-trigger>Browse</button>
+                            </div>
+                            <input asp-for="ReferencesDoc" type="file" class="hidden-input" />
+                        </div>
+                        <span asp-validation-for="ReferencesDoc" class="text-danger"></span>
+                    </div>
+                </section>
+
+                <div class="actions">
+                    <button type="submit" class="btn-submit">Submit Application</button>
+                </div>
+
+                @if (ViewBag.Success != null)
+                {
+                    <p class="status success">@ViewBag.Success</p>
+                }
+                @if (ViewBag.Error != null)
+                {
+                    <p class="status error">@ViewBag.Error</p>
+                }
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Enhance each file-card with click + drag & drop + filename display
+        document.querySelectorAll('.file-card').forEach(card => {
+            const input = card.querySelector('input[type="file"]');
+            const triggerBtn = card.querySelector('[data-trigger]');
+            const info = card.querySelector('.file-info');
+
+            // Click to open
+            triggerBtn?.addEventListener('click', () => input.click());
+            card.addEventListener('click', (e) => {
+                if (!e.target.closest('button')) input.click();
+            });
+
+            // Update label
+            input.addEventListener('change', () => {
+                const name = input.files?.length ? Array.from(input.files).map(f => f.name).join(', ') : 'No file selected';
+                info.innerHTML = `📄 <span><b>${name}</b></span>`;
+            });
+
+            // Drag + drop
+            ['dragenter', 'dragover'].forEach(evt => {
+                card.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); card.classList.add('drag'); });
+            });
+            ['dragleave', 'drop'].forEach(evt => {
+                card.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); card.classList.remove('drag'); });
+            });
+            card.addEventListener('drop', e => {
+                if (e.dataTransfer?.files?.length) {
+                    input.files = e.dataTransfer.files;
+                    const name = Array.from(input.files).map(f => f.name).join(', ');
+                    info.innerHTML = `📄 <span><b>${name}</b></span>`;
+                }
+            });
+        });
+    </script>
+}

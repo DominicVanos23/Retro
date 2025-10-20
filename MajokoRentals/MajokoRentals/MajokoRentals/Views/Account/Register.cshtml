@@ -1,0 +1,266 @@
+﻿<style>
+    :root {
+        --bg-1: #0E1327;
+        --bg-2: #151A2C;
+        --brand: #BAAA49;
+        --text: #FFFFFF;
+        --text-dim: #D7D9E1;
+        --border: #ffffff22;
+        --shadow: 0 14px 38px rgba(0,0,0,.45);
+        --radius: 18px;
+        --ring: 0 0 0 3px rgba(186,170,73,.35);
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+        background: radial-gradient(1200px 600px at 10% -10%, #20306655 0%, transparent 60%), radial-gradient(900px 500px at 110% 10%, #3a2f0b33 0%, transparent 55%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: linear-gradient(to right, #ffffff08 1px, transparent 1px), linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: radial-gradient(circle at 50% 30%, black 30%, transparent 70%);
+            pointer-events: none;
+        }
+
+    .page-container {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 48px 16px;
+    }
+
+    .auth-card {
+        width: min(460px, 92vw);
+        padding: 32px 28px;
+        border-radius: var(--radius);
+        background: linear-gradient(180deg, #ffffff26, #ffffff12);
+        -webkit-backdrop-filter: blur(16px) saturate(140%);
+        backdrop-filter: blur(16px) saturate(140%);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+    }
+
+    .brand-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .brand-logo {
+        width: 84px;
+        height: auto;
+        filter: drop-shadow(0 4px 16px rgba(0,0,0,.45));
+    }
+
+    .brand-title {
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--brand);
+        margin: 0;
+    }
+
+    .auth-card h2 {
+        margin: 6px 0 6px;
+        font-size: 28px;
+        color: var(--brand);
+        text-align: center;
+    }
+
+    .auth-sub {
+        text-align: center;
+        color: var(--text-dim);
+        margin: 0 0 18px;
+        font-size: 14px;
+    }
+
+    .form-group {
+        margin: 12px 0;
+    }
+
+    .label {
+        display: block;
+        font-size: 13px;
+        color: #e6e8f2cc;
+        margin: 0 0 6px 6px;
+    }
+
+    .input, .select {
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: linear-gradient(180deg, #0b0f2233, #0b0f221a);
+        color: var(--text);
+        font-size: 15px;
+        outline: none;
+        transition: box-shadow .2s ease, border-color .2s ease, background .2s ease;
+    }
+
+        .input::placeholder {
+            color: #cfd3e6cc;
+        }
+
+        .input:focus, .select:focus {
+            border-color: var(--brand);
+            box-shadow: var(--ring);
+            background: linear-gradient(180deg, #0b0f224d, #0b0f2226);
+        }
+
+    /* Fancy select (Role dropdown) */
+    .select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23BAAA49' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 42px;
+        color: #151A2C; /* navy text color when selected */
+        background-color: #ffffffcc;
+        font-weight: 600;
+    }
+
+        .select option {
+            color: #151A2C; /* navy text inside dropdown */
+            background-color: #ffffff;
+        }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    @@media (max-width: 520px) {
+        .grid-2
+
+    {
+        grid-template-columns: 1fr;
+    }
+
+    }
+
+    .btn-primary {
+        width: 100%;
+        border: none;
+        border-radius: 14px;
+        padding: 12px 16px;
+        font-weight: 800;
+        letter-spacing: .2px;
+        background: linear-gradient(180deg, #e4d46d, #BAAA49);
+        color: #121629;
+        cursor: pointer;
+        transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+        box-shadow: 0 8px 20px rgba(186,170,73,.35);
+        margin-top: 6px;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(186,170,73,.45);
+            filter: brightness(1.02);
+        }
+
+    .helper {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+    }
+
+    .link {
+        color: var(--brand);
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+    footer {
+        width: 100%;
+        padding: 18px;
+        background: linear-gradient(180deg, #0b1022, #0a0f20);
+        color: var(--brand);
+        text-align: center;
+        border-top: 1px solid #ffffff1a;
+        margin-top: 40px;
+    }
+
+    @@media (prefers-reduced-motion: reduce) {
+        *
+
+    {
+        transition: none !important;
+    }
+
+    }
+</style>
+
+<div class="page-container">
+    <section class="auth-card" aria-labelledby="register-title">
+        <div class="brand-wrap">
+            <img src="~/img/Mlogo.png" alt="Majoko Rentals logo" class="brand-logo" />
+            <p class="brand-title">Majoko Rentals</p>
+        </div>
+
+        <h2 id="register-title">Create Account</h2>
+        <p class="auth-sub">Join Majoko Rentals to apply, manage your tenancy, and stay informed.</p>
+
+        <form asp-controller="Account" asp-action="Register" method="post" novalidate>
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                <label class="label" for="FullName">Full Name</label>
+                <input id="FullName" class="input" type="text" name="FullName" placeholder="Your full name" required />
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="Email">Email Address</label>
+                <input id="Email" class="input" type="email" name="Email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+
+            <div class="grid-2">
+                <div class="form-group">
+                    <label class="label" for="Password">Password</label>
+                    <input id="Password" class="input" type="password" name="Password" placeholder="••••••••" required autocomplete="new-password" />
+                </div>
+                <div class="form-group">
+                    <label class="label" for="ConfirmPassword">Confirm Password</label>
+                    <input id="ConfirmPassword" class="input" type="password" name="ConfirmPassword" placeholder="••••••••" required autocomplete="new-password" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="Role">Role</label>
+                <select id="Role" class="select" name="Role" required>
+                    <option value="">Select Role</option>
+                    <option value="Tenant">Tenant</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Caretaker">Caretaker</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-primary">Register</button>
+
+            <div class="helper">
+                <a href="/Account/Login" class="link">Already have an account? Log in</a>
+            </div>
+        </form>
+    </section>
+</div>

@@ -1,0 +1,336 @@
+﻿@model List<MajokoRentals.Models.MaintenanceRequest>
+
+@{
+    ViewData["Title"] = "Maintenance Requests";
+}
+
+<style>
+    :root {
+        --bg-1: #0E1327;
+        --bg-2: #151A2C;
+        --panel: #ffffff22;
+        --panel-2: #ffffff10;
+        --brand: #BAAA49;
+        --text: #fff;
+        --text-dim: #D7D9E1;
+        --border: #ffffff2a;
+        --shadow: 0 18px 40px rgba(0,0,0,.45);
+        --radius: 16px;
+        --ring: 0 0 0 3px rgba(186,170,73,.35);
+    }
+
+    body {
+        color: var(--text);
+    }
+
+    .page-shell {
+        max-width: 1100px;
+        margin: 48px auto;
+        padding: 0 16px;
+    }
+
+    /* Glass card */
+    .card-glass {
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        -webkit-backdrop-filter: blur(14px) saturate(140%);
+        backdrop-filter: blur(14px) saturate(140%);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+    }
+
+    .card-header-glass {
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(180deg, #0b102255, transparent);
+    }
+
+    .title {
+        color: var(--brand);
+        text-shadow: 0 1px 0 rgba(0,0,0,.25);
+        letter-spacing: .3px;
+    }
+
+    .lead-dim {
+        color: var(--text-dim);
+    }
+
+    /* Form */
+    .form-label {
+        color: var(--brand);
+        font-weight: 600;
+    }
+
+    .form-control, .form-select {
+        background: linear-gradient(180deg, #0b0f2233, #0b0f221a);
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+    }
+
+        .form-control::placeholder {
+            color: #cfd3e6cc;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--brand);
+            box-shadow: var(--ring);
+            background: linear-gradient(180deg, #0b0f224d, #0b0f2226);
+            color: var(--text);
+        }
+
+    /* Upload preview */
+    .upload-wrap {
+        border: 1px dashed var(--border);
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: linear-gradient(180deg, #ffffff18, #ffffff0c);
+    }
+
+    .preview {
+        width: 72px;
+        height: 72px;
+        border-radius: 10px;
+        object-fit: cover;
+        background: #0b0f22;
+        border: 1px solid var(--border);
+    }
+
+    /* Buttons */
+    .btn-brand {
+        background: linear-gradient(180deg, #e4d46d, #BAAA49);
+        color: #121629;
+        font-weight: 800;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 10px 24px rgba(186,170,73,.35);
+    }
+
+        .btn-brand:hover {
+            filter: brightness(1.02);
+            transform: translateY(-1px);
+        }
+
+    .btn-outline-brand {
+        border: 1px solid var(--brand);
+        color: var(--brand);
+    }
+
+        .btn-outline-brand:hover {
+            background: var(--brand);
+            color: #121629;
+        }
+
+    /* Table */
+    .table-dark {
+        --bs-table-bg: transparent;
+    }
+
+    .table thead th {
+        color: var(--brand);
+        border-bottom-color: var(--border);
+    }
+
+    .table > :not(caption) > * > * {
+        border-color: var(--border);
+        color: #fff;
+    }
+
+    .table td img {
+        border: 1px solid var(--border);
+    }
+
+    /* Status badges */
+    .badge-pill {
+        border-radius: 999px;
+        padding: .45rem .7rem;
+        font-weight: 700;
+        border: 1px solid var(--border);
+        background: linear-gradient(180deg, #ffffff26, #ffffff12);
+        color: #fff;
+    }
+
+    .st-new {
+        border-color: #3ea6ff55;
+        color: #a8d8ff;
+    }
+
+    .st-inprog {
+        border-color: #ffd25555;
+        color: #ffe39c;
+    }
+
+    .st-done {
+        border-color: #8ff0a455;
+        color: #b6f8c4;
+    }
+
+    .st-cancel {
+        border-color: #ff8a8a55;
+        color: #ffc1c1;
+    }
+
+    /* Filters */
+    .filters .form-select, .filters .form-control {
+        height: 44px;
+    }
+</style>
+
+<div class="page-shell">
+
+    <div class="card card-glass mb-4">
+        <div class="card-header card-header-glass p-3">
+            <h3 class="title m-0">🔧 Submit a Maintenance Request</h3>
+            <small class="lead-dim">Describe the issue, attach a photo, and we’ll notify the maintenance team.</small>
+        </div>
+
+        <div class="card-body p-3 p-md-4">
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success text-center mb-4">@TempData["SuccessMessage"]</div>
+            }
+
+            <form method="post" asp-action="SubmitRequest" enctype="multipart/form-data" class="row g-3">
+                <div class="col-md-4">
+                    <label class="form-label">Tenant Name</label>
+                    <input type="text" name="TenantName" class="form-control" placeholder="e.g., Aisha Patel" required />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Unit Number</label>
+                    <input type="text" name="UnitNumber" class="form-control" placeholder="e.g., B-203" required />
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Issue Description</label>
+                    <textarea name="Description" class="form-control" placeholder="Describe the issue, location, and urgency…" rows="3" required></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Photo (optional)</label>
+                    <div class="upload-wrap">
+                        <img id="preview" class="preview" alt="preview" />
+                        <input type="file" id="Photo" name="Photo" class="form-control" accept="image/*" />
+                    </div>
+                    <small class="text-muted">Accepted: JPG/PNG. Max 5–10MB (configurable).</small>
+                </div>
+                <div class="col-md-6 d-flex align-items-end">
+                    <button type="submit" class="btn btn-brand w-100 py-2">Submit Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card card-glass">
+        <div class="card-header card-header-glass p-3">
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2">
+                <div>
+                    <h4 class="m-0 title">📋 Submitted Requests</h4>
+                    <small class="lead-dim">Filter by status or search by text.</small>
+                </div>
+                <div class="filters d-grid d-md-flex gap-2">
+                    <select id="statusFilter" class="form-select">
+                        <option value="">All Statuses</option>
+                        <option>New</option>
+                        <option>In Progress</option>
+                        <option>Completed</option>
+                        <option>Cancelled</option>
+                    </select>
+                    <input id="searchBox" class="form-control" placeholder="Search description, unit, tenant…" />
+                    <button class="btn btn-outline-brand" type="button" id="clearFilters">Clear</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-dark table-hover align-middle mb-0" id="reqTable">
+                    <thead>
+                        <tr>
+                            <th style="min-width:90px;">ID</th>
+                            <th>Description</th>
+                            <th style="min-width:140px;">Date</th>
+                            <th style="min-width:130px;">Status</th>
+                            <th style="min-width:120px;">Photo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model == null || !Model.Any())
+                        {
+                            <tr><td colspan="5" class="text-center text-muted py-4">No requests yet.</td></tr>
+                        }
+                        else
+                        {
+                            foreach (var r in Model)
+                            {
+                                var status = (r.Status ?? "").Trim();
+                                var stClass = status switch
+                                {
+                                    "Completed" => "badge-pill st-done",
+                                    "In Progress" => "badge-pill st-inprog",
+                                    "Cancelled" => "badge-pill st-cancel",
+                                    _ => "badge-pill st-new"
+                                };
+                                <tr data-status="@status" data-search="@($"{r.RequestID} {r.Description} {r.UnitNumber} {r.TenantName}".ToLower())">
+                                    <td>@r.RequestID</td>
+                                    <td class="text-start">@r.Description</td>
+                                    <td>@r.RequestDate.ToString("yyyy-MM-dd HH:mm")</td>
+                                    <td><span class="@stClass">@status</span></td>
+                                    <td>
+                                        @if (!string.IsNullOrEmpty(r.PhotoPath))
+                                        {
+                                            <a href="@r.PhotoPath" target="_blank" rel="noopener">
+                                                <img src="@r.PhotoPath" width="80" height="60" class="rounded" style="object-fit:cover;" />
+                                            </a>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Image preview
+        const input = document.getElementById('Photo');
+        const preview = document.getElementById('preview');
+        if (input && preview){
+            preview.style.display = 'none';
+            input.addEventListener('change', e => {
+                const f = e.target.files?.[0];
+                if (!f){ preview.style.display='none'; return; }
+                const url = URL.createObjectURL(f);
+                preview.src = url; preview.style.display='block';
+            });
+        }
+
+        // Client-side filters
+        const statusFilter = document.getElementById('statusFilter');
+        const searchBox = document.getElementById('searchBox');
+        const clearBtn = document.getElementById('clearFilters');
+        const rows = Array.from(document.querySelectorAll('#reqTable tbody tr'));
+
+        function applyFilters(){
+            const status = (statusFilter?.value || '').toLowerCase();
+            const q = (searchBox?.value || '').toLowerCase().trim();
+            rows.forEach(tr => {
+                const st = (tr.getAttribute('data-status') || '').toLowerCase();
+                const hay = (tr.getAttribute('data-search') || '');
+                const matchStatus = !status || st === status;
+                const matchText = !q || hay.includes(q);
+                tr.style.display = (matchStatus && matchText) ? '' : 'none';
+            });
+        }
+        statusFilter?.addEventListener('change', applyFilters);
+        searchBox?.addEventListener('input', applyFilters);
+        clearBtn?.addEventListener('click', () => {
+            if (statusFilter) statusFilter.value = '';
+            if (searchBox) searchBox.value = '';
+            applyFilters();
+        });
+    </script>
+}

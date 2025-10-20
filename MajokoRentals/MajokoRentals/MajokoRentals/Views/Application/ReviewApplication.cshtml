@@ -1,0 +1,156 @@
+﻿@model List<MajokoRentals.Models.ApplicationModel>
+
+@{
+    ViewData["Title"] = "Review Applications";
+}
+
+<style>
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: calc(100vh - 60px);
+        padding: 20px;
+        text-align: center;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        color: #BAAA49;
+        margin-bottom: 30px;
+    }
+
+    table {
+        width: 100%;
+        max-width: 1200px;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        background-color: #1E2445;
+        color: white;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    thead {
+        background-color: #151A2C;
+        color: #BAAA49;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+    }
+
+    tbody tr {
+        background-color: #1E2445;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #252B4A;
+    }
+
+    .btn-update {
+        background-color: #BAAA49;
+        color: #151A2C;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .btn-update:hover {
+        background-color: #FFD700;
+    }
+
+    .form-select-sm {
+        display: inline-block;
+        width: auto;
+        margin-right: 5px;
+        font-size: 0.9rem;
+        vertical-align: middle;
+    }
+
+    .alert-success {
+        background-color: #BAAA49;
+        color: #151A2C;
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        max-width: 800px;
+    }
+
+    a.file-link {
+        color: #BAAA49;
+        text-decoration: underline;
+    }
+</style>
+
+<div class="page-container">
+    <h1>Review Tenant Applications</h1>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+
+    <table>
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Cell Number</th>
+                <th>Submission Date</th>
+                <th>Documents</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var app in Model)
+            {
+                <tr>
+                    <td>@app.FullName</td>
+                    <td>@app.Email</td>
+                    <td>@app.CellNumber</td>
+                    <td>@app.SubmissionDate.ToString("g")</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(app.CertifiedIDPath))
+                        {
+                            <a href="~/@app.CertifiedIDPath" target="_blank" class="file-link">ID</a>
+                        }
+                        @if (!string.IsNullOrEmpty(app.ProofOfIncomePath))
+                        {
+                            <span> | </span>
+                            <a href="~/@app.ProofOfIncomePath" target="_blank" class="file-link">Income</a>
+                        }
+                        @if (!string.IsNullOrEmpty(app.ReferencesDocPath))
+                        {
+                            <span> | </span>
+                            <a href="~/@app.ReferencesDocPath" target="_blank" class="file-link">References</a>
+                        }
+                    </td>
+                    <td>@app.Status</td>
+                    <td>
+                        <form method="post" asp-action="UpdateStatus">
+                            <input type="hidden" name="id" value="@app.ApplicationID" />
+                            <select name="status" class="form-select-sm">
+                                <option value="Pending" selected="@(app.Status == "Pending")">Pending</option>
+                                <option value="Approved" selected="@(app.Status == "Approved")">Approve</option>
+                                <option value="Rejected" selected="@(app.Status == "Rejected")">Reject</option>
+                            </select>
+
+                            <button type="submit" class="btn-update">Update</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+                              

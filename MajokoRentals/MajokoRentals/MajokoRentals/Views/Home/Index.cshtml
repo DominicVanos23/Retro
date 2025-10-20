@@ -1,0 +1,320 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    Layout = "_Layout";
+}
+
+<style>
+    :root {
+        --bg-1: #0E1327;
+        --bg-2: #151A2C;
+        --brand: #BAAA49;
+        --text: #FFFFFF;
+        --text-dim: #D7D9E1;
+        --card: #0f142b80; /* 50% alpha */
+        --border: #ffffff1a; /* 10% white */
+        --shadow: 0 10px 30px rgba(0,0,0,.35);
+        --radius: 16px;
+        --radius-lg: 22px;
+        --ring: 0 0 0 3px rgba(186,170,73,.35);
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        background: radial-gradient(1200px 600px at 10% -10%, #20306655 0%, transparent 60%), radial-gradient(900px 500px at 110% 10%, #3a2f0b33 0%, transparent 55%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+        /* Decorative subtle grid */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: linear-gradient(to right, #ffffff08 1px, transparent 1px), linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: radial-gradient(circle at 50% 30%, black 30%, transparent 70%);
+            pointer-events: none;
+        }
+
+    /* Logo top-left */
+    .logo {
+        position: fixed;
+        top: 18px;
+        left: 22px;
+        width: 120px;
+        height: auto;
+        image-rendering: auto;
+        z-index: 10;
+        filter: drop-shadow(0 2px 10px rgba(0,0,0,.35));
+    }
+
+    /* Top-right user icon (glass ring) */
+    .user-icon {
+        position: fixed;
+        top: 18px;
+        right: 22px;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+        border: 1px solid var(--border);
+        background: linear-gradient(180deg, #ffffff22, #ffffff10);
+        -webkit-backdrop-filter: blur(8px) saturate(120%);
+        backdrop-filter: blur(8px) saturate(120%);
+        box-shadow: var(--shadow);
+        z-index: 10;
+        transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+        .user-icon:hover {
+            transform: translateY(-2px);
+        }
+
+        .user-icon:focus-visible {
+            outline: none;
+            box-shadow: var(--ring);
+        }
+
+        .user-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    /* Page shell */
+    .page-container {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 96px 24px 48px; /* top accounts for fixed header items */
+    }
+
+    .content-wrap {
+        width: min(1120px, 100%);
+        display: grid;
+        gap: 32px;
+    }
+
+    /* Glass hero */
+    .hero {
+        display: grid;
+        gap: 18px;
+        padding: clamp(24px, 4vw, 40px);
+        border-radius: var(--radius-lg);
+        background: linear-gradient(180deg, #ffffff26, #ffffff12);
+        -webkit-backdrop-filter: blur(14px) saturate(140%);
+        backdrop-filter: blur(14px) saturate(140%);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        text-align: center;
+    }
+
+    .eyebrow {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-weight: 600;
+        letter-spacing: .4px;
+        background: #ffffff12;
+        border: 1px solid var(--border);
+        color: var(--text-dim);
+    }
+
+    .hero h1 {
+        font-size: clamp(28px, 4vw, 44px);
+        line-height: 1.15;
+        margin: 6px 0 8px;
+        color: var(--brand);
+        text-shadow: 0 1px 0 rgba(0,0,0,.3);
+    }
+
+    .hero p {
+        font-size: clamp(16px, 2vw, 18px);
+        line-height: 1.65;
+        color: var(--text-dim);
+        margin: 0 auto;
+        max-width: 70ch;
+    }
+
+    /* CTA grid (glass tiles) */
+    .tile-grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    @@media (max-width: 900px) {
+        .tile-grid
+
+    {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    }
+    @@media (max-width: 560px) {
+        .tile-grid
+
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    }
+
+    .tile {
+        grid-column: span 3;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        text-decoration: none;
+        padding: 26px 18px;
+        border-radius: var(--radius);
+        background: linear-gradient(180deg, #ffffff20, #ffffff0f);
+        -webkit-backdrop-filter: blur(12px) saturate(130%);
+        backdrop-filter: blur(12px) saturate(130%);
+        border: 1px solid var(--border);
+        color: var(--text);
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: .2px;
+        box-shadow: var(--shadow);
+        transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+        position: relative;
+        isolation: isolate;
+    }
+
+        .tile::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            background: radial-gradient(600px 160px at 50% 0%, rgba(186,170,73,.35), transparent 60%);
+            opacity: 0;
+            transition: opacity .2s ease;
+            z-index: -1;
+        }
+
+        .tile:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 36px rgba(0,0,0,.45);
+            color: #121629;
+        }
+
+            .tile:hover::after {
+                opacity: 1;
+            }
+
+        .tile:focus-visible {
+            outline: none;
+            box-shadow: var(--ring), var(--shadow);
+        }
+
+        .tile .kicker {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dim);
+            margin-top: 6px;
+        }
+
+    /* About (glass card) */
+    .about-section {
+        padding: clamp(22px, 4vw, 36px);
+        border-radius: var(--radius-lg);
+        background: linear-gradient(180deg, #ffffff22, #ffffff0f);
+        -webkit-backdrop-filter: blur(12px) saturate(135%);
+        backdrop-filter: blur(12px) saturate(135%);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+    }
+
+        .about-section h2 {
+            color: var(--brand);
+            margin: 0 0 10px;
+            font-size: clamp(22px, 2.6vw, 28px);
+        }
+
+        .about-section p {
+            color: var(--text-dim);
+            font-size: 17px;
+            line-height: 1.8;
+            margin: 0;
+            max-width: 78ch;
+        }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        padding: 18px 24px;
+        background: linear-gradient(180deg, #0b1022, #0a0f20);
+        color: var(--brand);
+        text-align: center;
+        border-top: 1px solid var(--border);
+    }
+
+    /* Motion respect */
+    @@media (prefers-reduced-motion: reduce) {
+        *
+
+    {
+        transition: none !important;
+    }
+
+    }
+</style>
+
+<!-- User icon top-right -->
+@if (User?.Identity?.IsAuthenticated ?? false)
+{
+    <a href="/Account/Profile" class="user-icon" aria-label="Open profile">
+        <img src="~/img/user.png" alt="">
+    </a>
+}
+
+<div class="page-container">
+    <main class="content-wrap" role="main">
+        <!-- HERO (glass) -->
+        <section class="hero" aria-labelledby="hero-title">
+            <span class="eyebrow">Welcome to Majoko Rentals</span>
+            <h1 id="hero-title">Find your next home</h1>
+            <p>
+                Browse available rentals, submit applications securely, and manage your tenancy online.
+                Managers and admins can publish listings, review applications, and message applicants — all in one place.
+            </p>
+        </section>
+
+        <!-- TILES (glass) -->
+        <nav class="tile-grid" aria-label="Primary actions">
+            <a href="/Listings/Listings" class="tile" aria-label="Browse Listings">
+                🏡 Browse Listings
+                <small class="kicker">See what’s available</small>
+            </a>
+            <a href="/Application/Application" class="tile" aria-label="Apply Now">
+                📝 Apply Now
+                <small class="kicker">Secure, paperless process</small>
+            </a>
+            <a href="/Account/Register" class="tile" aria-label="Create Account">
+                👤 Create Account
+                <small class="kicker">Save searches & track</small>
+            </a>
+            <a href="/Chatbot/Chatbot" class="tile" aria-label="Open MajokoBot">
+                🤖 MajokoBot
+                <small class="kicker">Ask questions anytime</small>
+            </a>
+        </nav>
+
+        <!-- ABOUT (glass) -->
+        <section class="about-section" aria-labelledby="about-title">
+            <h2 id="about-title">About Majoko Rentals</h2>
+            <p>
+                Majoko Rentals connects tenants and property managers with ease. Our platform simplifies the entire rental
+                process—from finding your dream home to managing your tenancy online. With secure digital applications,
+                transparent communication, and a modern, accessible design, Majoko Rentals helps you focus on what matters:
+                finding the right place to call home.
+            </p>
+        </section>
+    </main>
+</div>

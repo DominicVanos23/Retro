@@ -1,0 +1,301 @@
+﻿@model List<MajokoRentals.Models.MaintenanceRequest>
+
+@{
+    ViewData["Title"] = "Admin Maintenance Requests";
+}
+
+<style>
+    :root {
+        --bg-1: #0E1327;
+        --bg-2: #151A2C;
+        --brand: #BAAA49;
+        --brand-2: #e4d46d;
+        --text: #FFFFFF;
+        --text-dim: #D7D9E1;
+        --panel: #ffffff22;
+        --panel-2: #ffffff10;
+        --border: #ffffff22;
+        --shadow: 0 18px 40px rgba(0,0,0,.45);
+        --radius: 16px;
+        --ring: 0 0 0 3px rgba(186,170,73,.35);
+        --danger: #D9534F;
+        --danger-hover: #C9302C;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: calc(100vh - 60px);
+        padding: 40px 20px;
+        text-align: center;
+        justify-content: flex-start;
+        color: var(--text);
+        background: radial-gradient(1200px 600px at 10% -10%, #20306655 0%, transparent 60%), radial-gradient(900px 500px at 110% 10%, #3a2f0b33 0%, transparent 55%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
+    }
+
+    h1 {
+        color: var(--brand);
+        margin: 0 0 24px;
+        font-weight: 800;
+        letter-spacing: .3px;
+        text-shadow: 0 1px 0 rgba(0,0,0,.25);
+    }
+
+    /* success alert */
+    .alert-success {
+        background: linear-gradient(180deg, var(--brand-2), var(--brand));
+        color: #121629;
+        padding: 10px 16px;
+        border-radius: 12px;
+        margin-bottom: 18px;
+        max-width: 800px;
+        box-shadow: 0 10px 24px rgba(186,170,73,.35);
+        border: none;
+        font-weight: 700;
+    }
+
+    /* table shell as glass card */
+    table {
+        width: 100%;
+        max-width: 1200px;
+        border-collapse: separate;
+        border-spacing: 0 12px; /* row gap */
+        background: transparent; /* rows become cards */
+        color: var(--text);
+    }
+
+    thead {
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        -webkit-backdrop-filter: blur(10px) saturate(135%);
+        backdrop-filter: blur(10px) saturate(135%);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        color: var(--brand);
+        box-shadow: 0 10px 24px rgba(0,0,0,.28);
+    }
+
+        thead th {
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 800;
+            letter-spacing: .2px;
+            border-bottom: 1px solid #ffffff12;
+            white-space: nowrap;
+        }
+
+    /* each row is a glass card */
+    tbody tr {
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        -webkit-backdrop-filter: blur(10px) saturate(135%);
+        backdrop-filter: blur(10px) saturate(135%);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: 0 10px 24px rgba(0,0,0,.28);
+        transition: transform .15s ease, box-shadow .2s ease, filter .15s ease;
+    }
+
+        tbody tr:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 36px rgba(0,0,0,.38);
+            filter: brightness(1.02);
+        }
+
+        /* rounded edges for first/last cells */
+        tbody tr td:first-child {
+            border-top-left-radius: var(--radius);
+            border-bottom-left-radius: var(--radius);
+        }
+
+        tbody tr td:last-child {
+            border-top-right-radius: var(--radius);
+            border-bottom-right-radius: var(--radius);
+        }
+
+    th, td {
+        padding: 14px 16px;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    /* Price column formatting (keeps your CultureInfo output) */
+    tbody tr td:nth-child(3) {
+        font-weight: 800;
+        color: #fff;
+    }
+
+    /* Status pill look (generic, no markup change) */
+    tbody tr td:nth-child(4) {
+        position: relative;
+        font-weight: 800;
+        color: #fff;
+        padding: .45rem .6rem;
+    }
+
+        tbody tr td:nth-child(4)::before {
+            content: "";
+            position: absolute;
+            inset: 6px 10px;
+            border-radius: 999px;
+            background: linear-gradient(180deg, #ffffff26, #ffffff12);
+            border: 1px solid var(--border);
+            z-index: -1;
+        }
+
+    /* action buttons */
+    .btn-edit, .btn-delete {
+        display: inline-block;
+        font-weight: 800;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding: 8px 14px;
+        cursor: pointer;
+        transition: transform .12s ease, box-shadow .18s ease, filter .18s ease, background-color .2s ease, color .2s ease;
+        text-decoration: none;
+        box-shadow: 0 8px 18px rgba(0,0,0,.25);
+    }
+
+    .btn-edit {
+        background: linear-gradient(180deg, var(--brand-2), var(--brand));
+        color: #121629;
+    }
+
+        .btn-edit:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 14px 28px rgba(186,170,73,.45);
+            filter: brightness(1.02);
+        }
+
+    .btn-delete {
+        background: linear-gradient(180deg, #ff7a76, var(--danger));
+        color: #fff;
+    }
+
+        .btn-delete:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 14px 28px rgba(217,83,79,.45);
+            background: linear-gradient(180deg, #ff8a86, var(--danger-hover));
+        }
+
+    /* responsive: stack nicely on small screens (no HTML changes) */
+    @@media (max-width: 720px) {
+        thead
+
+    {
+        display: none;
+    }
+
+    table, tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+        tbody tr {
+            margin: 0 0 12px;
+        }
+
+            tbody tr td {
+                padding: 10px 14px;
+                border: none;
+            }
+
+                tbody tr td::before {
+                    content: attr(data-label);
+                    display: block;
+                    color: var(--text-dim);
+                    font-size: .85rem;
+                    margin-bottom: 4px;
+                    letter-spacing: .2px;
+                }
+                /* Fallback labels if data-label not present */
+                tbody tr td:nth-child(1)::before {
+                    content: "Title";
+                }
+
+                tbody tr td:nth-child(2)::before {
+                    content: "Location";
+                }
+
+                tbody tr td:nth-child(3)::before {
+                    content: "Price";
+                }
+
+                tbody tr td:nth-child(4)::before {
+                    content: "Status";
+                }
+
+                tbody tr td:nth-child(5)::before {
+                    content: "Actions";
+                }
+                /* status pill sizing */
+                tbody tr td:nth-child(4) {
+                    display: inline-block;
+                    max-width: 100%;
+                }
+
+    }
+</style>
+
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">🔧 Manage Maintenance Requests</h2>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success text-center">@TempData["SuccessMessage"]</div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger text-center">@TempData["ErrorMessage"]</div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped text-center" style="color:white;">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Tenant Name</th>
+                    <th>Unit Number</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Update Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var request in Model)
+                    {
+                        <tr style="color:white;">
+                            <td>@request.RequestID</td>
+                            <td>@request.TenantName</td>
+                            <td>@request.UnitNumber</td>
+                            <td>@request.Description</td>
+                            <td>@request.RequestDate.ToString("yyyy-MM-dd HH:mm")</td>
+                            <td>@request.Status</td>
+                            <td>
+                                <form method="post" asp-action="UpdateStatus">
+                                    <input type="hidden" name="requestId" value="@request.RequestID" />
+                                    <select name="status" class="form-select form-select-sm mb-1">
+                                        <option value="Pending" selected="@("Pending" == request.Status)">Pending</option>
+                                        <option value="In Progress" selected="@("In Progress" == request.Status)">In Progress</option>
+                                        <option value="Resolved" selected="@("Resolved" == request.Status)">Resolved</option>
+                                    </select>
+                                    <button type="submit" class="btn btn-success btn-sm w-100">Update</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr style="color:white;">
+                        <td colspan="7">No maintenance requests found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

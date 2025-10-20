@@ -1,0 +1,632 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\user\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\user\\manageusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\tenant\\tenant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\tenant\\tenant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\maintenance\\adminmaintenance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\maintenance\\adminmaintenance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\listings\\managelisting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\listings\\managelisting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\listings\\listings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\listings\\listings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\listings\\addlisting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\listings\\addlisting.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\listings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\listings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\communication\\communication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\communication\\communication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\dashboard\\adminboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\dashboard\\adminboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\reports\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\reports\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\chatbot\\chatbot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\chatbot\\chatbot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\maintenance\\maintenancer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\maintenance\\maintenancer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\maintenancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\maintenancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\application\\application.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\application\\application.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\listingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\listingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\models\\dashboardreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\models\\dashboardreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\models\\maintenancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\models\\maintenancerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\tenantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\tenantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\comunicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\comunicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\views\\application\\reviewapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\views\\application\\reviewapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\models\\listingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\models\\listingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|c:\\users\\stret.domvivobook\\downloads\\majokorentals\\majokorentals\\majokorentals\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A5C14DA-76EC-483A-A739-F3D2C28742FE}|MajokoRentals\\MajokoRentals.csproj|solutionrelative:majokorentals\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADIBAAAAAAAAAAAAAD8BAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T18:32:54.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddListing.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Listings\\AddListing.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Listings\\AddListing.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Listings\\AddListing.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Listings\\AddListing.cshtml",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAiwL0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-08T15:29:39.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Listings\\Details.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Listings\\Details.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Listings\\Details.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Listings\\Details.cshtml",
+              "ViewState": "AgIAANYAAAAAAAAAAAAiwB0BAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-08T16:36:52.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManageListing.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Listings\\ManageListing.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Listings\\ManageListing.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Listings\\ManageListing.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Listings\\ManageListing.cshtml",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAowK8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-10T12:00:50.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Listings.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Listings\\Listings.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Listings\\Listings.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Listings\\Listings.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Listings\\Listings.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAowMAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-02T12:20:41.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminMaintenance.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Maintenance\\AdminMaintenance.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Maintenance\\AdminMaintenance.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Maintenance\\AdminMaintenance.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Maintenance\\AdminMaintenance.cshtml",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAowLgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T22:39:02.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageUsers.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\User\\ManageUsers.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\User\\ManageUsers.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\User\\ManageUsers.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\User\\ManageUsers.cshtml",
+              "ViewState": "AgIAAIEAAADA/////38vwJ8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-10T15:08:40.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Communication.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Communication\\Communication.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Communication\\Communication.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Communication\\Communication.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Communication\\Communication.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T08:50:12.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tenant.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Tenant\\Tenant.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Tenant\\Tenant.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Tenant\\Tenant.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Tenant\\Tenant.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T15:35:38.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminBoard.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Dashboard\\AdminBoard.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Dashboard\\AdminBoard.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Dashboard\\AdminBoard.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Dashboard\\AdminBoard.cshtml",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAG8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T12:58:22.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Chatbot.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Chatbot\\Chatbot.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Chatbot\\Chatbot.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Chatbot\\Chatbot.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Chatbot\\Chatbot.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T17:40:29.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MaintenanceRequest.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\MaintenanceRequest.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Models\\MaintenanceRequest.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\MaintenanceRequest.cs",
+              "RelativeToolTip": "MajokoRentals\\Models\\MaintenanceRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T20:37:38.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DashboardReport.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\DashboardReport.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Models\\DashboardReport.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\DashboardReport.cs",
+              "RelativeToolTip": "MajokoRentals\\Models\\DashboardReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T15:39:57.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\ReportsController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\ReportsController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T14:58:35.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Reports.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Reports\\Reports.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Reports\\Reports.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Reports\\Reports.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Reports\\Reports.cshtml",
+              "ViewState": "AgIAALUAAAAAAAAAAAAAAFEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T15:01:40.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAG4BAAAAAAAAAAAAAGoBAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-02T12:11:14.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MaintenanceR.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Maintenance\\MaintenanceR.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Maintenance\\MaintenanceR.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Maintenance\\MaintenanceR.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Maintenance\\MaintenanceR.cshtml",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAcwFABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T15:03:11.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MaintenanceController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\MaintenanceController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\MaintenanceController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\MaintenanceController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\MaintenanceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:03:30.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TenantController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\TenantController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\TenantController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\TenantController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\TenantController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:36:44.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ComunicationController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ComunicationController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\ComunicationController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ComunicationController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\ComunicationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T08:49:08.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAqwKMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T11:25:08.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ChatbotController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ChatbotController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\ChatbotController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ChatbotController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\ChatbotController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T17:41:21.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAAO8AAACVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-02T11:24:34.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\appsettings.json",
+              "RelativeDocumentMoniker": "MajokoRentals\\appsettings.json",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\appsettings.json",
+              "RelativeToolTip": "MajokoRentals\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-03T13:36:34.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\UserController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T15:08:00.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DashBoardController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\DashBoardController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\DashBoardController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\DashBoardController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\DashBoardController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAABBwCkAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T13:15:41.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\UserModel.cs",
+              "RelativeToolTip": "MajokoRentals\\Models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T15:05:26.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ListingModel.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\ListingModel.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Models\\ListingModel.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\ListingModel.cs",
+              "RelativeToolTip": "MajokoRentals\\Models\\ListingModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T15:28:20.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ListingsController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ListingsController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\ListingsController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ListingsController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\ListingsController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvxsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T13:40:55.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ReviewApplication.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Application\\ReviewApplication.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Application\\ReviewApplication.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Application\\ReviewApplication.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Application\\ReviewApplication.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-10T14:36:00.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ApplicationController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ApplicationController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\ApplicationController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\ApplicationController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\ApplicationController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAABBwBcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T16:16:20.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ApplicationModel.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\ApplicationModel.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Models\\ApplicationModel.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\ApplicationModel.cs",
+              "RelativeToolTip": "MajokoRentals\\Models\\ApplicationModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T16:15:37.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Application.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Application\\Application.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Application\\Application.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Application\\Application.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Application\\Application.cshtml",
+              "ViewState": "AgIAAC0BAAAAAAAAAAAowBcBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-07T15:36:08.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MajokoRentals\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T18:32:34.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "MajokoRentals\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "MajokoRentals\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAO4AAAAAAAAAAAASwAoBAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-02T11:24:16.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Program.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Program.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Program.cs",
+              "RelativeToolTip": "MajokoRentals\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T13:39:54.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "MajokoRentals\\Models\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\stret.DOMVIVOBOOK\\Downloads\\MajokoRentals\\MajokoRentals\\MajokoRentals\\Models\\HomeViewModel.cs",
+              "RelativeToolTip": "MajokoRentals\\Models\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T11:56:57.931Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

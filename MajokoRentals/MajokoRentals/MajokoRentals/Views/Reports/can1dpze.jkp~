@@ -1,0 +1,312 @@
+﻿@model MajokoRentals.Models.DashboardReport
+
+@{
+    ViewData["Title"] = "📊 Reports & Analysis";
+}
+
+<style>
+    :root {
+        --bg-1: #0E1327;
+        --bg-2: #151A2C;
+        --brand: #BAAA49;
+        --brand-2: #e4d46d;
+        --text: #FFFFFF;
+        --text-dim: #D7D9E1;
+        --border: #ffffff22;
+        --shadow: 0 18px 40px rgba(0,0,0,.45);
+        --radius: 16px;
+        --ring: 0 0 0 3px rgba(186,170,73,.35);
+        --panel: #ffffff22;
+        --panel-2: #ffffff10;
+        --ok: #28a745;
+        --warn: #ffc107;
+        --danger: #dc3545;
+        --info: #17a2b8;
+        --primary: #3b5bdb;
+        --success: #2fb344;
+    }
+
+    html, body {
+        background: radial-gradient(1200px 600px at 10% -10%, #20306655 0%, transparent 60%), radial-gradient(900px 500px at 110% 10%, #3a2f0b33 0%, transparent 55%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container.mt-5 {
+        max-width: 1100px;
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        -webkit-backdrop-filter: blur(14px) saturate(140%);
+        backdrop-filter: blur(14px) saturate(140%);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 28px 20px 28px;
+    }
+
+    h2.text-center {
+        color: var(--brand);
+        text-shadow: 0 1px 0 rgba(0,0,0,.25);
+        letter-spacing: .3px;
+        margin-bottom: 10px !important;
+    }
+
+    .lead.text-center {
+        color: var(--text-dim);
+        margin-bottom: 8px;
+    }
+
+    hr {
+        border-color: var(--border);
+        opacity: .6;
+    }
+
+    /* KPI cards (use existing .card elements; no structure changes) */
+    .row.text-center .card {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        box-shadow: 0 10px 26px rgba(0,0,0,.35);
+        background: linear-gradient(180deg, #ffffff22, #ffffff10);
+        -webkit-backdrop-filter: blur(10px) saturate(140%);
+        backdrop-filter: blur(10px) saturate(140%);
+        transition: transform .15s ease, box-shadow .2s ease;
+    }
+
+        .row.text-center .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 36px rgba(0,0,0,.45);
+        }
+
+        .row.text-center .card h6 {
+            margin: 0 0 4px;
+            font-weight: 700;
+            letter-spacing: .3px;
+            color: #fff;
+            opacity: .9;
+        }
+
+        .row.text-center .card h4 {
+            margin: 0;
+            font-weight: 900;
+            letter-spacing: .2px;
+            color: #fff;
+            text-shadow: 0 1px 0 rgba(0,0,0,.2);
+        }
+
+    /* Replace bootstrap bg-* colors with brand accents without changing markup */
+    .row.text-center .bg-primary {
+        background: linear-gradient(180deg, #3b5bdb, #2843b8) !important;
+    }
+
+    .row.text-center .bg-danger {
+        background: linear-gradient(180deg, #dc3545, #b31f2c) !important;
+    }
+
+    .row.text-center .bg-success {
+        background: linear-gradient(180deg, #2fb344, #239237) !important;
+    }
+
+    .row.text-center .bg-info {
+        background: linear-gradient(180deg, #17a2b8, #118396) !important;
+    }
+
+    .row.text-center .bg-warning {
+        background: linear-gradient(180deg, #e7c04a, #BAAA49) !important;
+        color: #121629 !important;
+    }
+
+    /* Chart area */
+    .row.justify-content-center > .col-md-6 {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: linear-gradient(180deg, #ffffff22, #ffffff10);
+        -webkit-backdrop-filter: blur(10px) saturate(140%);
+        backdrop-filter: blur(10px) saturate(140%);
+        box-shadow: 0 10px 26px rgba(0,0,0,.35);
+        padding: 16px;
+    }
+    /* Make canvas breathe without changing structure */
+    #maintenanceChart {
+        display: block;
+        max-height: 300px;
+        margin: 4px auto;
+    }
+
+    /* Nice tooltips/fonts in chart.js (applied via script defaults too) */
+</style>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">📊 Reports & Analysis</h2>
+    <p class="lead text-center">Financial, occupancy, and maintenance performance metrics with real-time updates.</p>
+    <hr />
+
+    <!-- 🔹 Animated Counters -->
+    <div class="row text-center mb-4">
+        <div class="col-md-2 col-sm-4 mb-3">
+            <div class="card bg-primary text-white p-2">
+                <h6>Total Revenue</h6>
+                <h4 id="totalRevenue">0</h4>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mb-3">
+            <div class="card bg-danger text-white p-2">
+                <h6>Total Arrears</h6>
+                <h4 id="totalArrears">0</h4>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mb-3">
+            <div class="card bg-success text-white p-2">
+                <h6>Total Properties</h6>
+                <h4 id="totalProperties">0</h4>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mb-3">
+            <div class="card bg-info text-white p-2">
+                <h6>Occupied Units</h6>
+                <h4 id="occupiedUnits">0</h4>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mb-3">
+            <div class="card bg-warning text-dark p-2">
+                <h6>Maintenance Pending</h6>
+                <h4 id="maintenancePending">0</h4>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 mb-3">
+            <div class="card bg-success text-white p-2">
+                <h6>Maintenance Resolved</h6>
+                <h4 id="maintenanceResolved">0</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔹 Maintenance Chart -->
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <canvas id="maintenanceChart" height="120"></canvas>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // ---------------------------
+        // Animated Counters (unchanged structure)
+        // ---------------------------
+        const data = {
+            totalRevenue: @Model.TotalRevenue,
+            totalArrears: @Model.TotalArrears,
+            totalProperties: @Model.TotalProperties,
+            occupiedUnits: @Model.OccupiedUnits,
+            maintenancePending: @Model.MaintenancePending,
+            maintenanceResolved: @Model.MaintenanceResolved
+        };
+
+        const currencyIds = new Set(["totalRevenue", "totalArrears"]);
+        const fmtCurrency = v => new Intl.NumberFormat('en-ZA', { style:'currency', currency:'ZAR', maximumFractionDigits:0 }).format(v);
+        const fmtNumber = v => v.toLocaleString();
+
+        function animateCounter(id, value) {
+            let counter = 0;
+            const steps = 100;
+            const inc = value / steps;
+            const el = document.getElementById(id);
+            const isMoney = currencyIds.has(id);
+
+            const timer = setInterval(() => {
+                counter += inc;
+                const done = counter >= value;
+                const val = done ? value : Math.floor(counter);
+                el.textContent = isMoney ? fmtCurrency(val) : fmtNumber(val);
+                if (done) clearInterval(timer);
+            }, 15);
+        }
+
+        animateCounter("totalRevenue", data.totalRevenue);
+        animateCounter("totalArrears", data.totalArrears);
+        animateCounter("totalProperties", data.totalProperties);
+        animateCounter("occupiedUnits", data.occupiedUnits);
+        animateCounter("maintenancePending", data.maintenancePending);
+        animateCounter("maintenanceResolved", data.maintenanceResolved);
+
+        // ---------------------------
+        // Chart.js: brand defaults + center label
+        // ---------------------------
+        Chart.defaults.color = '#D7D9E1';
+        Chart.defaults.font.family = 'ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial';
+        Chart.defaults.plugins.legend.labels.usePointStyle = true;
+        Chart.defaults.plugins.legend.labels.pointStyle = 'circle';
+
+        // Plugin to draw total in the center (no structure change)
+        const centerText = {
+            id: 'centerText',
+            afterDraw(chart, args, opts) {
+                const {ctx, chartArea:{width, height}} = chart;
+                const total = data.maintenancePending + data.maintenanceResolved;
+                ctx.save();
+                ctx.font = '600 18px ' + Chart.defaults.font.family;
+                ctx.fillStyle = '#FFFFFF';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(`Total: ${total.toLocaleString()}`, chart.getDatasetMeta(0).data[0].x, chart.getDatasetMeta(0).data[0].y);
+                ctx.restore();
+            }
+        };
+
+        // Gradient fills
+        const ctx = document.getElementById('maintenanceChart').getContext('2d');
+        const gradPending = ctx.createLinearGradient(0, 0, 0, 200);
+        gradPending.addColorStop(0, '#f7d865');
+        gradPending.addColorStop(1, '#BAAA49');
+        const gradResolved = ctx.createLinearGradient(0, 0, 0, 200);
+        gradResolved.addColorStop(0, '#4cd97b');
+        gradResolved.addColorStop(1, '#28a745');
+
+        // ---------------------------
+        // Maintenance Chart (structure preserved)
+        // ---------------------------
+        const maintenanceChart = new Chart(ctx, {
+            type: 'doughnut',
+            plugins: [centerText],
+            data: {
+                labels: ['Pending', 'Resolved'],
+                datasets: [{
+                    label: 'Maintenance Requests',
+                    data: [data.maintenancePending, data.maintenanceResolved],
+                    backgroundColor: [gradPending, gradResolved],
+                    borderWidth: 1,
+                    borderColor: '#00000022',
+                    hoverOffset: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '70%',
+                layout: { padding: 10 },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { font: { size: 12 } }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(21,26,44,.9)',
+                        borderColor: '#ffffff22',
+                        borderWidth: 1,
+                        padding: 10,
+                        callbacks: {
+                            label: (ctx) => `${ctx.label}: ${ctx.raw.toLocaleString()}`
+                        }
+                    }
+                },
+                animation: {
+                    animateRotate: true,
+                    animateScale: true,
+                    duration: 800,
+                    easing: 'easeOutQuart'
+                }
+            }
+        });
+    </script>
+}

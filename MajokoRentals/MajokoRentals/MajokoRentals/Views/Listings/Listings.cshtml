@@ -1,0 +1,205 @@
+﻿@model IEnumerable<MajokoRentals.Models.ListingModel>
+@using System.Text.Json
+
+@{
+    ViewData["Title"] = "All Listings";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<div class="listings-container">
+    @foreach (var listing in Model)
+    {
+        var images = new List<string>();
+        if (!string.IsNullOrEmpty(listing.ImageUrls))
+        {
+            try
+            {
+                images = JsonSerializer.Deserialize<List<string>>(listing.ImageUrls);
+            }
+            catch
+            {
+                images.Add("uploads/default.jpg");
+            }
+        }
+
+        if (!images.Any())
+        {
+            images.Add("uploads/default.jpg");
+        }
+
+        <div class="listing-card">
+            <a asp-controller="Listings" asp-action="Details" asp-route-id="@listing.ListingID">
+                <div class="listing-image">
+                    <img src="~/@images[0]" alt="@listing.Title" onerror="this.src='/uploads/default.jpg';" />
+                </div>
+                <div class="listing-info">
+                    <h3>@listing.Title</h3>
+                    <p class="listing-price">R @listing.Price.ToString("N2")</p>
+                    <p class="listing-location"><i class="fa-solid fa-location-dot"></i> @listing.Location</p>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+<style>
+    :root {
+        --bg-1: #0E1327;
+        --bg-2: #151A2C;
+        --brand: #BAAA49;
+        --brand-2: #e4d46d;
+        --text: #FFFFFF;
+        --text-dim: #D7D9E1;
+        --border: #ffffff22;
+        --shadow: 0 18px 40px rgba(0,0,0,.45);
+        --panel: #ffffff22;
+        --panel-2: #ffffff10;
+        --radius: 18px;
+        --ring: 0 0 0 3px rgba(186,170,73,.35);
+    }
+
+    /* Page base */
+    body {
+        margin: 0;
+        background: radial-gradient(1200px 600px at 10% -10%, #20306655 0%, transparent 60%), radial-gradient(900px 500px at 110% 10%, #3a2f0b33 0%, transparent 55%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
+        color: var(--text);
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Grid wrapper */
+    .listings-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 22px;
+        max-width: 1220px;
+        padding: 50px 20px;
+        margin: 0 auto;
+    }
+
+    /* Card */
+    .listing-card {
+        position: relative;
+        border-radius: var(--radius);
+        background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        -webkit-backdrop-filter: blur(12px) saturate(135%);
+        backdrop-filter: blur(12px) saturate(135%);
+        border: 1px solid var(--border);
+        box-shadow: 0 10px 26px rgba(0,0,0,.35);
+        overflow: hidden;
+        transition: transform .18s ease, box-shadow .25s ease, filter .2s ease;
+    }
+
+        .listing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 36px rgba(0,0,0,.45);
+            filter: brightness(1.02);
+        }
+
+        .listing-card a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+    /* Image */
+    .listing-image {
+        position: relative;
+        aspect-ratio: 16/10; /* keeps a consistent thumbnail ratio */
+        background: #0f1328;
+        overflow: hidden;
+    }
+
+        .listing-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transform: scale(1.0);
+            transition: transform .35s ease;
+            filter: saturate(1.05) contrast(1.02);
+        }
+
+    .listing-card:hover .listing-image img {
+        transform: scale(1.04);
+    }
+
+    /* Soft top light */
+    .listing-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(800px 180px at 50% -10%, rgba(186,170,73,.28), transparent 60%);
+        opacity: .0;
+        pointer-events: none;
+        transition: opacity .2s ease;
+    }
+
+    .listing-card:hover::after {
+        opacity: .6;
+    }
+
+    /* Info */
+    .listing-info {
+        padding: 16px 18px 18px;
+    }
+
+        .listing-info h3 {
+            margin: 0 0 8px;
+            font-size: 1.18rem;
+            font-weight: 800;
+            letter-spacing: .2px;
+            color: var(--text);
+            text-shadow: 0 1px 0 rgba(0,0,0,.2);
+        }
+
+    /* Price chip */
+    .listing-price {
+        display: inline-block;
+        margin: 0 0 8px;
+        font-weight: 900;
+        letter-spacing: .2px;
+        color: #121629;
+        background: linear-gradient(180deg, var(--brand-2), var(--brand));
+        padding: 6px 12px;
+        border-radius: 999px;
+        box-shadow: 0 10px 24px rgba(186,170,73,.35);
+        font-size: .98rem;
+    }
+
+    .listing-location {
+        color: var(--text-dim);
+        font-size: .95rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+    }
+
+        .listing-location i {
+            color: var(--brand);
+        }
+
+    /* Keyboard focus for accessibility */
+    .listing-card a:focus-visible {
+        outline: none;
+        box-shadow: var(--ring);
+        border-radius: var(--radius);
+    }
+
+    /* Subtle responsive tweaks */
+    @@media (max-width: 420px) {
+        .listing-info
+
+    {
+        padding: 14px;
+    }
+
+    .listing-info h3 {
+        font-size: 1.08rem;
+    }
+
+    }
+</style>

@@ -1,0 +1,202 @@
+﻿@{
+    ViewData["Title"] = "Manage Users";
+}
+
+<style>
+    :root {
+        --bg-1: #0E1327;
+        --bg-2: #151A2C;
+        --panel: #ffffff12;
+        --brand: #BAAA49;
+        --brand-2: #C8B862;
+        --text: #FFFFFF;
+        --text-dim: #D7D9E1;
+        --ring: 0 0 0 3px rgba(186,170,73,.35);
+        --shadow-lg: 0 18px 40px rgba(0,0,0,.45);
+        --shadow-md: 0 10px 24px rgba(0,0,0,.35);
+        --radius: 16px;
+    }
+
+    /* Page shell */
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: calc(100vh - 60px);
+        padding: 32px 20px;
+        gap: 18px;
+        text-align: center;
+        background: radial-gradient(1200px 600px at 10% -10%, rgba(186,170,73,.08), transparent 60%), radial-gradient(900px 500px at 90% 0%, rgba(186,170,73,.06), transparent 60%), linear-gradient(180deg, var(--bg-1), var(--bg-2));
+    }
+
+    /* Heading */
+    h1 {
+        margin: 6px 0 22px 0;
+        font-weight: 800;
+        letter-spacing: .4px;
+        line-height: 1.15;
+        font-size: clamp(26px, 3.2vw, 36px);
+        color: transparent;
+        background: linear-gradient(92deg, var(--brand), var(--brand-2) 60%, #fff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: 0 0 0 rgba(0,0,0,0); /* crisper gradient text */
+    }
+
+    /* KPI card */
+    .kpi-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-width: min(90vw, 780px);
+        min-height: 160px;
+        /* glass panel with layered gradient */
+        background: linear-gradient(135deg, #1E2445 0%, #151A2C 60%), linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+        border: 1px solid rgba(255,255,255,.14);
+        border-radius: var(--radius);
+        padding: 44px 60px;
+        color: var(--text);
+        font-weight: 800;
+        font-size: clamp(34px, 5vw, 44px);
+        line-height: 1;
+        box-shadow: var(--shadow-lg);
+        transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+        /* tidy numbers */
+        font-variant-numeric: tabular-nums lining-nums;
+    }
+
+        /* subtle inner glow ring */
+        .kpi-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            pointer-events: none;
+            background: radial-gradient(120% 120% at 10% 0%, rgba(186,170,73,.18), transparent 48%), radial-gradient(140% 140% at 90% 20%, rgba(186,170,73,.10), transparent 50%);
+            mix-blend-mode: screen;
+        }
+
+        /* light sheen sweep */
+        .kpi-card::after {
+            content: "";
+            position: absolute;
+            inset: -1px;
+            border-radius: inherit;
+            background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.12) 25%, transparent 55%);
+            opacity: .0;
+            transform: translateX(-20%);
+            transition: opacity .35s ease, transform .35s ease;
+            pointer-events: none;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 26px 60px rgba(186,170,73,.22);
+            border-color: rgba(186,170,73,.55);
+        }
+
+            .kpi-card:hover::after {
+                opacity: .6;
+                transform: translateX(20%);
+            }
+
+    .kpi-label {
+        font-size: clamp(14px, 1.4vw, 18px);
+        font-weight: 600;
+        letter-spacing: .25px;
+        color: var(--brand);
+        opacity: .95;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    /* Alerts */
+    .alert {
+        max-width: min(90vw, 780px);
+        width: 100%;
+        text-align: left;
+        border-radius: 12px;
+        padding: 14px 16px;
+        margin: 0 auto 12px auto;
+        border: 1px solid transparent;
+        box-shadow: var(--shadow-md);
+        line-height: 1.35;
+    }
+
+    .alert-success {
+        background: linear-gradient(180deg, rgba(186,170,73,.18), rgba(186,170,73,.10));
+        color: #151A2C;
+        border-color: rgba(186,170,73,.45);
+        font-weight: 600;
+    }
+
+    .alert-danger {
+        background: linear-gradient(180deg, rgba(208,63,63,.15), rgba(208,63,63,.07));
+        color: #fff;
+        border-color: rgba(208,63,63,.45);
+    }
+
+    /* Focus ring if the card ever gets focus (a11y friendly) */
+    .kpi-card:focus-visible {
+        outline: none;
+        box-shadow: var(--shadow-lg), var(--ring);
+    }
+
+    /* Backdrop blur where supported, degrades gracefully */
+    @@supports (backdrop-filter: blur(8px)) {
+        .kpi-card
+
+    {
+        backdrop-filter: blur(10px) saturate(120%);
+    }
+
+    }
+
+    /* Motion respect */
+    @@media (prefers-reduced-motion: reduce) {
+        .kpi-card, .kpi-card::after
+
+    {
+        transition: none;
+    }
+
+    .kpi-card:hover {
+        transform: none;
+    }
+
+    }
+</style>
+
+<div class="page-container">
+    <h1>Manage Users</h1>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+
+    <div class="kpi-card" id="userCountCard">
+        @ViewBag.TotalUsers
+        <div class="kpi-label">Registered Users</div>
+    </div>
+</div>
+
+<script>
+    async function refreshUserCount() {
+        try {
+            const response = await fetch('/User/GetUserCount');
+            const count = await response.json();
+            if (count >= 0) {
+                document.getElementById('userCountCard').firstChild.textContent = count;
+            }
+        } catch (err) {
+            console.error('Error fetching user count', err);
+        }
+    }
+
+    setInterval(refreshUserCount, 10000); // refresh every 10 seconds
+</script>
